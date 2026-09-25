@@ -14,7 +14,7 @@ body {
 }
 
 .hero {
-  height: 100vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,7 +69,7 @@ body {
 
 .hero-action-button:hover {
   transition: 0.5s;
-  transition-delay: 0.1s;
+  transition-delay: 0.15s;
   color: dimgray;
   background: linear-gradient(
     90deg,
@@ -78,72 +78,22 @@ body {
     rgb(255, 0, 0)
   );
 }
-@media only screen and (min-width: 600px) {
-  .title {
-    font-size: 5rem;
-    line-height: 4rem;
-  }
-
-  .untertitel {
-    font-size: 1.7rem;
-  }
-  .hero-action-button {
-    padding: 1rem 2.5rem;
-    font-size: 1.5rem;
-  }
-
-  @media only screen and (min-width: 1000px) {
-    .title {
-      font-size: 6rem;
-      line-height: 5rem;
-    }
-    .untertitel {
-      font-size: 2.5rem;
-    }
-    .hero-action-button {
-      padding: 1.7rem 4.5rem;
-      font-size: 2rem;
-    }
-  }
+nav {
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
 }
 
-/* Ursprünglicher code  */
-/* .hero {
-  height: 100vh;
-  background:
-    linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(img/Titelbild0.png);
-  background-size: cover;
-  background-position: center;
+.nav-bar {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  text-align: center;
-} */
-/* .title {
-  font-size: 3rem;
-  font-family: "Cinzel Decorative", serif;
-  font-size: 600%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 2%;
 }
-.untertitel {
-  font-size: 250%;
-  color: blanchedalmond;
-  text-align: center;
-}
-.untertitel-2 {
-  font-size: 200%;
-  color: blanchedalmond;
-}
-.hero-action-button {
-  font-size: 170%;
-  margin-top: 5%;
-  padding: 1%;
-  border: 3px solid;
+
+.nav-item:hover {
+  transition: 0.5s;
+  transition-delay: 0.08s;
+  cursor: alias;
   background: linear-gradient(
     90deg,
     rgb(0, 255, 0),
@@ -159,19 +109,43 @@ body {
       rgb(255, 0, 0)
     )
     1;
+  border-bottom: 1px solid;
 }
 
-.hero-action-button:hover {
-  transition: 0.5s;
-  transition-delay: 0.1s;
-  color: dimgray;
-  text-align: center;
-  justify-content: center;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); */
-/* background: linear-gradient(
-    90deg,
-    rgb(0, 255, 0),
-    rgb(255, 255, 255),
-    rgb(255, 0, 0)
-  );
-} */
+@media only screen and (min-width: 600px) {
+  .title {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+
+  .untertitel {
+    font-size: 1.7rem;
+  }
+  .hero-action-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .title {
+      font-size: 6rem;
+      line-height: 5rem;
+    }
+    .untertitel {
+      font-size: 2.5rem;
+    }
+    .hero-action-button {
+      padding: 1.7rem 4.5rem;
+      font-size: 2rem;
+    }
+
+    .nav-item {
+      font-size: 2rem;
+    }
+  }
+}
+
