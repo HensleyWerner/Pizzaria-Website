@@ -1,10 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Fondamento:ital@0;1&family=Fontdiner+Swanky&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jim+Nightshade&family=Permanent+Marker&family=Quintessential&family=Risque&family=Rock+Salt&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  color: white;
   font-family: "Risque", serif;
 }
+
+body {
+  background-color: #1a1a1a;
+  color: white;
+  font-family:
+    "Risque", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/Titelbild0.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-family:
+    "Rock Salt", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.untertitel {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  color: lightgrey;
+}
+
+.hero-action-button {
+  font-family:
+    "Fondamento", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 3rem;
+  padding: 0.2rem 2rem;
+  border: 3px solid;
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 255, 0),
+    rgb(255, 255, 255),
+    rgb(255, 0, 0)
+  );
+  background-clip: text;
+  color: transparent;
+  border-image: linear-gradient(
+      90deg,
+      rgb(0, 255, 0),
+      rgb(255, 255, 255),
+      rgb(255, 0, 0)
+    )
+    1;
+}
+
+.hero-action-button:hover {
+  transition: 0.5s;
+  transition-delay: 0.1s;
+  color: dimgray;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 255, 0),
+    rgb(255, 255, 255),
+    rgb(255, 0, 0)
+  );
+}
+@media only screen and (min-width: 600px) {
+  .title {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+
+  .untertitel {
+    font-size: 1.7rem;
+  }
+  .hero-action-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .title {
+      font-size: 6rem;
+      line-height: 5rem;
+    }
+    .untertitel {
+      font-size: 2.5rem;
+    }
+    .hero-action-button {
+      padding: 1.7rem 4.5rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+/* Ursprünglicher code  */
+/* .hero {
   height: 100vh;
   background:
     linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -16,8 +120,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-.title {
+} */
+/* .title {
+  font-size: 3rem;
   font-family: "Cinzel Decorative", serif;
   font-size: 600%;
   display: flex;
@@ -63,10 +168,10 @@
   text-align: center;
   justify-content: center;
   /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); */
-  background: linear-gradient(
+/* background: linear-gradient(
     90deg,
     rgb(0, 255, 0),
     rgb(255, 255, 255),
     rgb(255, 0, 0)
   );
-}
+} */
